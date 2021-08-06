@@ -1,5 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-
+import { Component, OnInit, Input, HostBinding } from '@angular/core';
 import { DestinoViaje } from '../models/destino-viaje.model';
 
 @Component({
@@ -9,6 +8,7 @@ import { DestinoViaje } from '../models/destino-viaje.model';
 })
 export class DestinoviajeComponent implements OnInit {
   @Input() destino: DestinoViaje;
+  @HostBinding('attr.class') cssClass = 'col-sm-4'
 
    constructor() {
   
