@@ -8,6 +8,7 @@ import { DestinoViaje } from '../models/destino-viaje.model';
 })
 export class DestinoviajeComponent implements OnInit {
   @Input() destino: DestinoViaje;
+  @Input('idx') position: number;
   @HostBinding('attr.class') cssClass = 'col-sm-4';
   @Output() clicked: EventEmitter<DestinoViaje>;
 
