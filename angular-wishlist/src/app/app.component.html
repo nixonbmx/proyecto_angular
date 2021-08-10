@@ -1,7 +1,18 @@
 <div class="container content">
+  <div class="page-header">
+    <div class="container">
+      <h1>Ruteo simple </h1>
+      <div class="navlinks">
+        <a [routerLink]="['/home']">home </a>
+        <a [routerLink]="['/destino']">destino</a>
+      </div>
+    </div>
+  </div>
   <div class="row">
-    <h1>hola mundo</h1>
+    <h1>
+    {{title}}
+    </h1>
   </div>
   
-  <app-listadestinos></app-listadestinos>
+  <router-outlet></router-outlet>
 </div>
